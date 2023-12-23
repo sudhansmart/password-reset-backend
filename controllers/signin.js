@@ -20,7 +20,7 @@ async function InsertVerifyUser(name, email, password) {
       token: token
     });
 
-    const activationLink = `http://localhost:3000/signin/${token}`;
+    const activationLink = `https://password-reset-6ofd.onrender.com/signin/${token}`;
     const content = `<h4>Hello Sir/Madam,</h4>
                      <h5>Welcome to My Page</h5>
                      <p>Thank You For Signing up. Click on the below link to Activate</p>
