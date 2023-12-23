@@ -10,7 +10,7 @@ async function forgotpassword(email) {
     const user = await User.findOne({ email });
     user.forgetPassword = token;
 
-    const resetLink = `http://localhost:5173/resetpassword/${token}`;
+    const resetLink = `https://6586a6c756d7346ce1d1a1ba--passwordresetfront.netlify.app/resetpassword/${token}`;
     const content = `<h4>Hello Sir/Madam,</h4>
                      <h5>Welcome to My Page</h5>
                      <p>Click on the below link to Reset Password</p>
